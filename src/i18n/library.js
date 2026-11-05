@@ -52,6 +52,8 @@ const strings = {
     cutterFromSurname: (c) => `Cutter ${c}: tomado de otro autor con el mismo apellido. Revíselo.`,
     cutterMissing: 'Este autor no tiene Cutter en la base: complételo con su tabla.',
     notesTitle: 'Agregar a la nota',
+    notesAdded: 'Frases agregadas a la nota',
+    noteRemove: (part) => `Quitar «${part}» de la nota`,
     notePhrases: ['Título original: ', 'Firmado por ', 'Datos tomados de la cubierta', 'Se traslada a colección pasiva', 'En estante: ', 'Traducción de: '],
     desc: {
       pages: 'Páginas',
@@ -148,6 +150,8 @@ const strings = {
     cutterFromSurname: (c) => `Cutter ${c}: taken from another author with the same surname. Please check it.`,
     cutterMissing: 'This author has no Cutter in the catalog: complete it with your table.',
     notesTitle: 'Add to the note',
+    notesAdded: 'Phrases added to the note',
+    noteRemove: (part) => `Remove “${part}” from the note`,
     notePhrases: ['Título original: ', 'Firmado por ', 'Datos tomados de la cubierta', 'Se traslada a colección pasiva', 'En estante: ', 'Traducción de: '],
     desc: {
       pages: 'Pages',

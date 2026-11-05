@@ -72,6 +72,12 @@ export default function CatalogAssistant({
     document.getElementById('field-nota')?.focus();
   };
 
+  // Cada frase de la nota se puede quitar por separado si se agregó por error.
+  const noteParts = String(fields.nota || '').split(' / ').map((p) => p.trim()).filter(Boolean);
+  const removeNote = (index) => {
+    onFieldChange('nota', noteParts.filter((_, i) => i !== index).join(' / '));
+  };
+
   const toggleBuilder = (name) => setBuilder((b) => (b === name ? null : name));
   const canScan = cameraEnabled && Boolean(navigator.mediaDevices?.getUserMedia);
 
@@ -154,6 +160,18 @@ export default function CatalogAssistant({
           {tl.notePhrases.map((phrase) => (
             <button key={phrase} type="button" className="assistant__note" onClick={() => addNote(phrase)}>{phrase.trim()}</button>
           ))}
+          {noteParts.length > 0 && (
+            <ul className="assistant__note-list" aria-label={tl.notesAdded}>
+              {noteParts.map((part, i) => (
+                <li key={`${part}-${i}`} className="assistant__note-item">
+                  <span>{part}</span>
+                  <button type="button" className="assistant__note-remove" aria-label={tl.noteRemove(part)} title={tl.noteRemove(part)} onClick={() => removeNote(i)}>
+                    <Icon name="trash" size={15} />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       )}
 

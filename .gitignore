@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# Assets binarios regenerados por scripts/copy-tesseract-assets.mjs
+public/tesseract
+public/tessdata
+
+.DS_Store
+*.log

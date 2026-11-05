@@ -1,0 +1,52 @@
+:root {
+  --navy:      #14395f;
+  --navy-deep: #0d2842;
+  --brass:     #a9812f;
+  --paper:     #f2ede1;
+  --card:      #fffdf9;
+  --ink:       #23262b;
+  --ink-soft:  #66696f;
+  --rule:      #ddd2b8;
+  --line:      #c9bea1;
+  --danger:    #8c2f2f;
+
+  --font-display: 'Lora', Georgia, serif;
+  --font-sans:    'Inter', -apple-system, sans-serif;
+  --font-mono:    'IBM Plex Mono', 'Courier New', monospace;
+
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --paper:     #111827;
+  --card:      #1e2a3a;
+  --ink:       #e8e4d9;
+  --ink-soft:  #9ca3af;
+  --rule:      #2d3f54;
+  --line:      #2d3f54;
+  --navy-deep: #060f1a;
+
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background 0.2s, color 0.2s;
+}
+
+#root { min-height: 100vh; }
+
+button, input, textarea { font-family: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }

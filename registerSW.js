@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/EBO-Biblioteca-Municipal-Santo-Domingo/sw.js', { scope: '/EBO-Biblioteca-Municipal-Santo-Domingo/' })})}

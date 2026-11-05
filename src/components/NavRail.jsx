@@ -3,6 +3,7 @@ import { useApp } from '../context/AppContext';
 import { useT } from '../i18n/translations';
 import { useLibraryT } from '../i18n/library';
 import Icon, { DotsIcon } from './Icons';
+import Logo from './Logo';
 
 // Riel izquierdo de escritorio (≥ 1100 px). En móvil se oculta por CSS y se
 // usa el Drawer. Solo navega y llama a los handlers que ya existen.
@@ -39,7 +40,7 @@ export default function NavRail({ view, configOpen, onNavigate, onOpenConfig, on
   return (
     <nav className="oc-rail" aria-label="EBO">
       <button type="button" className="oc-rail__logo" onClick={() => onNavigate('main')} aria-label={t.header.goHome}>
-        EBO
+        <Logo size={40} />
       </button>
 
       {items.map((it) => {

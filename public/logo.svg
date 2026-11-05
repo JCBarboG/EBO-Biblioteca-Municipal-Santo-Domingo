@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 6 188 188" role="img" aria-label="EBO, Biblioteca Municipal Santo Domingo">
+  <clipPath id="marco"><rect x="6" y="6" width="188" height="188" rx="42"/></clipPath>
+  <g clip-path="url(#marco)">
+    <rect width="200" height="200" fill="#1F6FA3"/>
+    <circle cx="100" cy="124" r="78" fill="#E5332A"/>
+    <circle cx="100" cy="124" r="58" fill="#F7B02D"/>
+    <circle cx="100" cy="124" r="36" fill="#FFF8EC"/>
+    <path d="M0 124H200V200H0Z" fill="#2E9E4F"/>
+    <path d="M100 118C78 106 46 106 24 114V168C46 160 78 160 100 172C122 160 154 160 176 168V114C154 106 122 106 100 118Z" fill="#FFF8EC"/>
+    <path d="M100 118V172" stroke="#1F6FA3" stroke-width="5"/>
+    <path d="M40 128C56 124 72 125 86 130M40 146C56 142 72 143 86 148M160 128C144 124 128 125 114 130M160 146C144 142 128 143 114 148" fill="none" stroke="#8CC63F" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

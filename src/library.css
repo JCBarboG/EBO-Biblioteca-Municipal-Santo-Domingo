@@ -12,6 +12,11 @@
   max-width: 130px;
 }
 
+/* Logo */
+:is(#root, body) .oc-mhead__logo { display: inline-flex; align-items: center; gap: 8px; }
+:is(#root, body) .drawer-logo { flex-shrink: 0; margin-right: 10px; }
+:is(#root, body) .about-logo { display: block; margin: 0 auto 12px; }
+
 /* Tachuela de cada campo */
 :is(#root, body) .category-grid__row { display: flex; align-items: center; gap: 4px; min-width: 0; }
 :is(#root, body) .category-grid__row .category-grid__head { flex: 1; min-width: 0; }

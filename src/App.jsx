@@ -28,6 +28,7 @@ import ConfirmDialog from './components/ConfirmDialog';
 import NavRail from './components/NavRail';
 import AddFieldPanel from './components/AddFieldPanel';
 import Icon, { DotsIcon } from './components/Icons';
+import Logo from './components/Logo';
 
 import SupportView from './views/SupportView';
 import AboutView from './views/AboutView';
@@ -936,7 +937,7 @@ function MobileHeader({ showDocType, onDocTypeChange, onHamburger, onLogoClick }
       <button type="button" className="oc-mhead__btn" onClick={onHamburger} aria-label={t.ui.openMenu}>
         <Icon name="menu" size={20} strokeWidth={1.8} />
       </button>
-      <button type="button" className="oc-mhead__logo" onClick={onLogoClick} aria-label={t.header.goHome}>EBO</button>
+      <button type="button" className="oc-mhead__logo" onClick={onLogoClick} aria-label={t.header.goHome}><Logo size={30} className="oc-mhead__mark" />EBO</button>
       <span className="oc-mhead__library">{LIBRARY_NAME}</span>
       <span className="oc-mhead__spacer" />
       {showDocType && <DocTypeSelector variant="list" onTypeChange={onDocTypeChange} />}

@@ -3,6 +3,7 @@ import { useApp } from '../context/AppContext';
 import { useT } from '../i18n/translations';
 import { useLibraryT, LIBRARY_NAME } from '../i18n/library';
 import Icon from './Icons';
+import Logo from './Logo';
 
 export default function Drawer({ open, onClose, onNewRecord, onExport, onOpenConfig, onNavigate }) {
   const { lang } = useApp();
@@ -28,6 +29,7 @@ export default function Drawer({ open, onClose, onNewRecord, onExport, onOpenCon
       <div className={`drawer-overlay${open ? ' drawer-overlay--open' : ''}`} onClick={onClose} />
       <aside className={`drawer${open ? ' drawer--open' : ''}`} aria-modal="true" role="dialog">
         <div className="drawer-header">
+          <Logo size={44} className="drawer-logo" />
           <div className="drawer-brand">
             <span className="drawer-title">EBO</span>
             <span className="drawer-subtitle">{LIBRARY_NAME}</span>

@@ -2,6 +2,7 @@ import { useApp } from '../context/AppContext';
 import { useT } from '../i18n/translations';
 import { LIBRARY_NAME } from '../i18n/library';
 import Icon from '../components/Icons';
+import Logo from '../components/Logo';
 
 export default function AboutView({ onBack, onNavigate }) {
   const { lang } = useApp();
@@ -17,6 +18,7 @@ export default function AboutView({ onBack, onNavigate }) {
 
       <div className="view-body">
         <div className="about-logo-section">
+          <Logo size={112} className="about-logo" />
           <p className="about-ebo-title">EBO</p>
           <span className="about-version-badge">{LIBRARY_NAME}</span>
           <p className="about-tagline">{ta.tagline}</p>
